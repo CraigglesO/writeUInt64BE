@@ -1,0 +1,12 @@
+{
+  "name": "writeuint64be",
+  "version": "1.0.0",
+  "description": "convert a number to a 64 bit stream",
+  "main": "writeUInt64BE.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node writeUInt64BE.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

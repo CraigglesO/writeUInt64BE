@@ -22,7 +22,7 @@ npm install writeuint64be
 ## Usage
 ```
 const Buffer = require('buffer').Buffer;
-const writeUInt64BE = require('./writeUInt64BE');
+const writeUInt64BE = require('writeUInt64BE');
 
 // First example, writing to a buffer at a specified location:
 

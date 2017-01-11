@@ -9,9 +9,9 @@ In computing. The number 9,223,372,036,854,775,807, equivalent to the hexadecima
 value is interpreted and written as a two's complement signed integer.
 
 writeInt32BE(buf, number[, offest])
-* buf <Buffer> Original buffer to edit or change
-* number <Integer> The signed integer to convert to a 64bit buffer
-* offset <Integer> Where to start writing. Must satisfy: 0 <= offset <= buf.length - 8
+* `buf <Buffer> Original buffer to edit or change`
+* `number <Integer> The signed integer to convert to a 64bit buffer`
+* `offset <Integer> Where to start writing. Must satisfy: 0 <= offset <= buf.length - 8`
 
 ## Install
 

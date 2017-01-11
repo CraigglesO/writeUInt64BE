@@ -13,8 +13,7 @@ function writeUInt64BE(buf, int64, offset) {
   const big = ~~(int64 / MAX_UINT32); // ~~ is equivalent to Math.floor()
   const low = (int64 % MAX_UINT32) - big;
 
-  if (!offset) {
-    const b = new Buffer(8);
+  if (!offset && offset !== 0) {
     b.writeUInt32BE(big, 0);
     b.writeUInt32BE(low, 4);
     return Buffer.concat([buf, b]);

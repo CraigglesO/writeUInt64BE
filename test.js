@@ -12,13 +12,10 @@ writeUInt64BE(buf, 123456789, 8);
 
 console.log(buf); // <Buffer 00 00 04 17 27 10 19 80 00 00 00 00 07 5b cd 15>
 
-// Second example, concatenating to the original buffer:
+// Second example, without an offset:
 
 let buf2 = new Buffer(8);
-buf2.fill(0);
 
-buf2.writeUInt32BE(0x417, 0);
-buf2.writeUInt32BE(0x27101980, 4);
-buf2 = writeUInt64BE(buf2, 123456789);
+writeUInt64BE(buf2, 123456789);
 
-console.log(buf2); // <Buffer 00 00 04 17 27 10 19 80 00 00 00 00 07 5b cd 15>
+console.log(buf2); // <Buffer 00 00 00 00 07 5b cd 15>

@@ -1,5 +1,7 @@
 # writeUInt64BE
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CraigglesO/writeUInt64BE.svg)](https://greenkeeper.io/)
+
 ### Safely create 64 bit buffers or add them to an existing buffer
 
 Writes number to buf at the specified offset with specified big endian format. Number should be a valid signed 64-bit integer.
